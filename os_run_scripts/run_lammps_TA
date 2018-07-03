@@ -1,0 +1,17 @@
+#! /bin/tcsh
+#BSUB -J surfactant
+#BSUB -o o.%J
+#BSUB -e e.%J
+#BSUB -n 16
+#BSUB -W 200:00
+#BSUB -R "select[hc || oc || tc || twc] span[hosts=1]"
+#BSUB -q santiso
+source /usr/local/apps/mpich3/centos7/intelmpi2017.csh
+source /gpfs_share/santiso/SOFTWARE/env_setup/lammps_env.csh
+grep -m 1 'model name' /proc/cpuinfo
+which python
+
+setenv nproc `echo $LSB_MCPU_HOSTS | cut -d " " -f2`
+echo $nproc
+mpiexec -n $nproc lmp_henry2 -in system_ST.in > surface_tension.log
+echo $PATH 
