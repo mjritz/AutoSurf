@@ -1,0 +1,4 @@
+LAMMPS is an open source molecular dynamics code that can be downloaded found at http://lammps.sandia.gov/download.html
+
+Once the source code is downloaded and compiled, move it to the src/ folder. 
+
