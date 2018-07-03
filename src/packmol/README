@@ -1,1 +1,3 @@
-Once compiled, the PACKMOL path can be moved into the source file OR the os_run_script has to be rerouted to /Applications/packmol/packmol
+Packmol is an open source code that can be found at http://m3g.iqm.unicamp.br/packmol/home.shtml
+
+Once compiled, the PACKMOL path should be moved to the src file using the command: mv packmol AutoSurf/src/.
