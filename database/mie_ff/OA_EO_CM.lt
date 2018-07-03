@@ -1,0 +1,28 @@
+# This file stores complete LAMMPS data for the TraPPE model of saturated
+# hydrocarbon chains.  In this "united-atom" model, each methyl group is
+# represented by a single atom.  Forces between "atoms" are taken from the
+# TraPPE force-field. (J Phys Chem B, 1998, volume 102, pp.2569-2577)
+
+MieMonomer {
+
+  write_once("Data Masses") {
+    @atom:MieMonomer/NP 42.0
+    @atom:MieMonomer/TP 37.5
+    @atom:MieMonomer/W 36.0
+    @atom:MieMonomer/P 44.05
+  }
+
+ write_once("Data Bond Coeffs") {
+    @bond:MieMonomer/NPNP      7.583 4.363500
+    @bond:MieMonomer/NPTP      7.583 4.043950
+    @bond:MieMonomer/TPTP      7.583 3.724400
+    @bond:MieMonomer/PTP      7.583 3.8929
+    @bond:MieMonomer/PP      7.583 4.0613
+    @bond:MieMonomer/NPP      7.583 4.2124
+  }
+
+ write_once("Data Angle Coeffs") {
+     @angle:MieMonomer/NPNPNP    2.650   157.6
+  }
+
+}                                                                 
