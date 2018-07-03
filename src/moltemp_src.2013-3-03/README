@@ -1,3 +1,3 @@
 moltemplate can is an open source code that can be found at http://www.moltemplate.org/
 
-Once downloaded and unpacked, move directory under src/.
+Once downloaded and unpacked, move directory under src/. using the command: mv moltemplate* AutoSurf/src/.
