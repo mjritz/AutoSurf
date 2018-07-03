@@ -1,0 +1,50 @@
+#This file sets the box size, water box dimensions, tolerance of packmol, name of the water input file, distance of beads from each other for initial configuration, number of beads in molecule
+
+#Sets values for paramaters in the input file for LAMMPS (equilibration time, number of loops/steps
+#in each loop, whether a wall will be set) **everything else will have to be
+#changed in input file before submitting it. 
+
+#PACKMOL variables
+
+packmol_tolerance 4.50
+
+bead_distance 4.50
+
+monomer_space 25.0 25.0 45.0 135.0 
+
+
+#Moltemplate variables
+
+surface_boxsize 30 30 40 
+
+surface_filename w_60xy80z.xyz 
+
+surface_molecules 4800
+
+overall_system_size 30 30 300 
+
+
+#LAMMPS input file variables
+
+units_per_molecule 14
+
+units_in_linear_branch 8
+
+long_equilibrate 1500000
+
+short_equilibrate 1000000
+
+rdf 5.5
+
+number_ST_loops 5000 
+
+step_per_loop 500 
+
+temperature 298.15
+
+wall 150.0 30.0 0.0 1.0
+
+DCD_filename equil.dcd production.dcd
+
+cutoff_distance 15.0
+

@@ -1,0 +1,5 @@
+Description: Line[1]: number of repeating units Line[2:]: description of surfactant using T (terminal polar), P (polar), and N (nonpolar)
+1
+B B B T B B B  
+      H
+      H
